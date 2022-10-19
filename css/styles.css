@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #162334;
+    color: #8169a7;
+    font-family: 'Roboto Condensed', Calibri, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.bg {
+    background: url('../img/bg-star-wars.jpg')no-repeat center;
+    background-size: cover;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 8);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 10px 10px;
+    border-bottom: rgba(255, 255, 255, 0.08) solid 1px;
+    margin: 0 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 100;
+    width: calc(100% - 14px);
+}
+
+.logo {
+    font-family: 'Koulen', 'Roboto Condensed';
+    color: #fff;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 6px 15px;
+}
+
+#chk-toggle {
+    display: none;
+}
+
+#toggle {
+    display: inline-block;
+    padding: 12px;
+}
+
+#toggle span {
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #8d96a7;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+nav {
+    flex-basis: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav ul li {
+    border-bottom: rgba(0, 0, 0, 0.7) solid 1px;
+}
+
+nav ul li:nth-child(1) {
+    border-bottom: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 0.98rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+
+}
+
+#chk-toggle:checked~nav {
+    height: auto;
+}
+
+.headline {
+    top: 5%;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    margin: 0 1rem;
+    flex-direction: column;
+}
+
+.headline h1 {
+    margin-top: 5rem;
+    font-family: 'Koulen', 'Roboto Condensed';
+    color: #201c1c;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 1);
+    line-height: 3.3rem;
+}
+
+.headline h1 span {
+    color: #ffffff;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    display: block;
+}
+
+.btn {
+    font-family: 'Koulen', 'Roboto Condensed';
+    text-decoration: none;
+    background-color: #000;
+    border: #000 solid 2px;
+    color: #fff;
+    padding: 5px 24px;
+    margin: 4px;
+    font-size: 0.9rem;
+}
+
+.clean {
+    border: rgb(247, 247, 247) solid 2px;
+    background-color: rgba(248, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+.ladoalado {
+    display: flex;
+    margin: 0 -3px;
+}
+
+.degrade {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#162323+1,112030+1,112030+93&0+11,1+90 */
+    background: -moz-linear-gradient(top, rgba(17, 32, 48, 0) 1%, rgba(17, 32, 48, 0) 11%, rgba(17, 32, 48, 1) 90%, rgba(17, 32, 48, 1) 93%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(17, 32, 48, 0) 1%, rgba(17, 32, 48, 0) 11%, rgba(17, 32, 48, 1) 90%, rgba(17, 32, 48, 1) 93%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(17, 32, 48, 0) 1%, rgba(17, 32, 48, 0) 11%, rgba(17, 32, 48, 1) 90%, rgba(17, 32, 48, 1) 93%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00112030', endColorstr='#112030', GradientType=0);
+    /* IE6-9 */
+
+    display: block;
+    height: 30%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#desc {
+    margin: 0 15px 30px 15px;
+    clear: both;
+    padding-top: 30px;
+}
+
+#videos {
+    margin: 0 15px 30px 15px;
+    clear: both;
+    padding-top: 30px;
+}
+
+#desc img {
+    border-radius: 5px;
+}
+
+#desc h2 {
+    font-family: 'Roboto Condensed', Calibri, Arial;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#desc p {
+    color: rgb(207, 204, 204);
+    font-size: 1.2rem;
+}
+
+.esq {
+    float: left;
+}
+
+.margdir {
+    margin-right: 13px;
+    margin-bottom: 10px;
+}
+
+.w43 {
+    width: 43%;
+}
+
+.video {
+    white-space: nowrap;
+    width: calc(100%+15px);
+    display: block;
+    overflow-y: auto;
+}
+
+#videos h2 {
+    font-family: 'Roboto Condensed', Calibri, Arial;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.video ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.video ul li {
+    display: inline-block;
+    width: 65%;
+    margin: 1px;
+}
+
+.video ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.video ul li img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box-assine {
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: rgba(255, 255, 255, 0.08) solid 1px;
+    border-top: rgba(0, 0, 0, 0.5) solid 1px;
+    border-right: rgba(255, 255, 255, 0.08) solid 1px;
+    border-left: rgba(0, 0, 0, 0.5) solid 1px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.box-assine img {
+    width: auto;
+    height: auto;
+}
+
+.assine,
+.preco,
+.vantagem {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.assine {
+    font-size: 1.5rem;
+}
+
+.preco {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.vantagem {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+footer {
+    background-color: #0a121d;
+    padding: 45px 0;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.sociais a {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #162336;
+}
+
+@media only screen and (max-width:300px) {
+    .logo {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+    }
+
+    #toggle span {
+        width: 2rem;
+        height: 0.2rem;
+        margin: 0.4rem;
+    }
+
+    .bg {
+        background: url('../img/bg-star-wars-mobile.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .headline h1 {
+        font-size: 1.8rem;
+        line-height: 3.1rem;
+    }
+
+    .headline h1 span {
+        font-size: 3.3rem;
+    }
+
+    .btn {
+        padding: 5px 5px;
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+
+    .clean {
+        font-size: 0.8rem;
+    }
+
+    #desc p {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media only screen and (min-width:500px) and (max-width:992px) {
+    .logo {
+        font-size: 1.8rem;
+        padding: 4px 12px;
+    }
+
+    #toggle span {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin: 0.4rem;
+    }
+
+    .bg {
+        background: url('../img/bg-star-wars-mobile.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+
+    }
+
+    .headline h1 {
+        font-size: 3.3rem;
+        line-height: 3.5rem;
+    }
+
+    .headline h1 span {
+        font-size: 3.5rem;
+    }
+
+    .btn {
+        padding: 5px 5px;
+        margin: 5px;
+        font-size: 2rem;
+    }
+
+    .clean {
+        font-size: 1.8rem;
+    }
+
+    #desc h2 {
+        font-size: 2rem;
+    }
+
+    #desc p {
+        font-size: 1.7rem;
+    }
+
+    .w43 {
+        width: 45%;
+    }
+
+    .video {
+        white-space: nowrap;
+        width: calc(100%+15px);
+        display: block;
+        overflow-y: auto;
+    }
+
+    #videos h2 {
+        font-size: 2rem;
+    }
+
+    .video ul li {
+        width: 75%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .video ul li a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .video ul li img {
+        width: 80%;
+        height: auto;
+        border-radius: 5px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-assine img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .assine {
+        font-size: 3rem;
+    }
+
+    .preco {
+        font-size: 3rem;
+    }
+
+    .vantagem {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        font-size: 1.6rem;
+    }
+
+    .sociais {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-bottom: 25px;
+    }
+
+    .sociais a {
+        width: 64px;
+        height: 64px;
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+    .logo {
+        font-size: 2.5rem;
+        padding: 6px 15px;
+    }
+
+    .headline {
+        top: 10%;
+    }
+
+    .headline h1 {
+        font-size: 5rem;
+    }
+
+    .headline h1 span {
+        font-size: 5.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 5px 5px;
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+    .clean {
+        font-size: 1.8rem;
+        background-color: rgba(76, 77, 75, 0.91);
+    }
+}

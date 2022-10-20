@@ -356,6 +356,7 @@ footer {
         font-size: 0.8rem;
     }
 
+
 }
 
 
@@ -410,6 +411,15 @@ footer {
 
     .w43 {
         width: 45%;
+    }
+
+    .video {
+        white-space: unset;
+        width: 100%;
+    }
+
+    .video ul li {
+        width: 50%;
     }
 
     .video {
